@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Aster CMI</title>
+    <style>
+        .mask {
+            background-image: url(img/Banner_mage.png);
+            width: 1300px;
+            height: 541px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .aster-logo-white {
+            width: 150px;
+            height: 150px;
+            margin-left: 110px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+
+        }
+
+        .adult-paediatric-b {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-family: Titillium-bold;
+            font-size: 31px;
+            letter-spacing: 1.28px;
+            line-height: 40px;
+            width: 640px;
+            text-align: left;
+            margin-left: 110px;
+            margin-top: 20px;
+        }
+
+        .haematology-oncolo {
+            color: #FFFFFF;
+            font-family: StagSans;
+            font-size: 25px;
+            letter-spacing: 3.59px;
+            line-height: 34px;
+            width: 599px;
+            text-align: left;
+            margin-left: 110px;
+        }
+
+        .rectangle {
+            background-color: #DD5A6A;
+            border-radius: 3.2px;
+            width: 186px;
+            height: 45px;
+            margin-left: 110px;
+        }
+
+        .book-an-appoinment {
+            color: #FFFFFF;
+            font-family: Arial;
+            font-size: 14.4px;
+            line-height: 17px;
+            text-align: left;
+            padding: 14px 15px 19px;
+        }
+
+        .rectangle1 {
+            background-color: #FFFFFF;
+            box-shadow: -4px 2px 13px 0 rgba(85, 95, 126, 0.18);
+            width: 339px;
+            height: 492px;
+            margin-top: 26px;
+            margin-bottom: 23px;
+        }
+
+        .enquire-now {
+            color: #213559;
+            font-family: StagSans;
+            font-size: 20.08px;
+            line-height: 24px;
+            width: 127px;
+            text-align: left;
+            margin-left: 32px;
+            padding-top: 30px;
+            margin-bottom: -5px;
+        }
+
+        .rectangle2 {
+            border: 0.87px solid #D0D0D0;
+            width: 278px;
+            height: 42px;
+            margin-left: 32px;
+            margin-top: 18px;
+        }
+
+        .rectangle-copy-3 {
+            border: 0.87px solid #D0D0D0;
+            width: 278px;
+            height: 72px;
+            margin-left: 32px;
+            margin-top: 18px;
+        }
+
+        .rectangle-copy-2 {
+            background-color: #FFFFFF;
+            border: 0.87px solid #D0D0D0;
+            width: 278px;
+            height: 77px;
+            margin-left: 32px;
+            margin-top: 18px;
+        }
+
+        .rectangle-5 {
+            background-color: #FFFFFF;
+            border: 0.87px solid #979797;
+            border-radius: 0.87px;
+            width: 18px;
+            height: 18px;
+            margin: 29px 30px 17px;
+        }
+
+        .rectangle-copy-4 {
+            background-color: #DD5A6A;
+            width: 111px;
+            height: 44px;
+            margin-left: 32px;
+            margin-top: 18px;
+        }
+
+        .submit {
+            color: #FFFFFF;
+            font-family: StagSans;
+            font-size: 14.84px;
+            line-height: 18px;
+            width: 54px;
+            text-align: left;
+            margin-left: 29px;
+            padding-top: 15px;
+        }
+
+        .shutterstock-237963190 {
+            width: 422px;
+            height: 422px;
+        }
+
+        .rectangle11 {
+            background-color: skyblue;
+            border-radius: 4px;
+            width: 586px;
+            height: 95px;
+        }
+
+        .bone-marrow-transpla {
+            color: #FFFFFF;
+            font-family: StagSans;
+            font-size: 18px;
+            line-height: 26px;
+            width: 545px;
+            text-align: left;
+            padding: 17px 16px 18px 25px;
+        }
+
+        .shutterstock {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .replacement-of-disea {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 17px;
+            line-height: 20px;
+            width: 532px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .medicines-and-in-cer {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 17px;
+            line-height: 20px;
+            width: 623px;
+            text-align: left;
+            margin-top: 45px;
+        }
+
+        .in-autologous-bone-m {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 17px;
+            line-height: 20px;
+            width: 605px;
+            text-align: left;
+            margin-top: 63px;
+        }
+
+        .doctors {
+            color: #22B78E;
+            font-family: StagSans;
+            font-size: 31px;
+            letter-spacing: 1.28px;
+            line-height: 44px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .doctor {
+
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .pediatric-bmt {
+            margin-top: 30px;
+            color: #22B78E;
+            font-family: StagSans;
+            font-size: 24px;
+            letter-spacing: 0.99px;
+            line-height: 44px;
+            text-align: center;
+
+        }
+
+        .bitmap-copy {
+            margin-left: 142px;
+        }
+
+        .dr-vijay-agarwal-copy {
+            color: #1D5AA6;
+            font-family: StagSans;
+            font-size: 22px;
+            letter-spacing: 1.76px;
+            line-height: 26px;
+            text-align: center;
+            padding-top: 29px;
+        }
+
+        .md-mrcp-ph-d-cct-le-copy {
+            color: #1D5AA6;
+            font-family: StagSans;
+            font-size: 15px;
+            letter-spacing: 1.2px;
+            line-height: 15px;
+            text-align: center;
+
+
+        }
+
+        .line-5-copy {
+            border: 1px solid #22B78E;
+            width: 37px;
+            height: 1px;
+            margin-left: 255px;
+
+        }
+
+        .dr-vijay-agarwal-is-copy {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 15px;
+            line-height: 20px;
+            width: 423px;
+            text-align: center;
+            margin-left: 58px;
+        }
+
+        .rectangle9 {
+            background-color: skyblue;
+            border-radius: 4px;
+            width: 129px;
+            height: 49px;
+            align-items: center;
+            margin-left: 205px;
+
+        }
+
+        .know-more {
+            color: #FFFFFF;
+            font-family: StagSans;
+            font-size: 15px;
+            letter-spacing: 1px;
+            line-height: 18px;
+            padding-top: 15px;
+            text-align: center;
+
+        }
+
+        .rectangle12 {
+            background-color: #F9F9FF;
+            border-radius: 4px;
+            width: 539px;
+            padding-bottom: 29px;
+        }
+
+
+        .line-3-copy-13 {
+            border: 1px solid #ECECFF;
+            width: 415px;
+            height: 2px;
+            margin-left: 60px;
+        }
+
+        .what-are-the-types-o {
+            color: #22B78E;
+            font-family: StagSans;
+            font-size: 31px;
+            letter-spacing: 1.28px;
+            line-height: 44px;
+            text-align: left;
+            margin-top: 93px;
+        }
+
+        .autologous-bone-marr {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 14px;
+            line-height: 39px;
+            width: 1068px;
+            text-align: left;
+        }
+
+        .autologouss {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .src1 {
+            margin-top: 10px;
+        }
+
+        .src2 {
+            margin-top: 25px;
+        }
+
+        .src3 {
+            margin-top: 22px;
+        }
+
+        .src4 {
+            margin-top: 22px;
+        }
+
+        .src5 {
+            margin-top: 24px;
+        }
+
+        .the-warning-signs-of {
+            color: #22B78E;
+            font-family: StagSans;
+            font-size: 31px;
+            letter-spacing: 1.28px;
+            line-height: 44px;
+            text-align: left;
+        }
+
+        .rectangle13 {
+            background-color: #FFFFFF;
+            border: 1px solid #E5EAFF;
+            border-radius: 4px;
+            box-shadow: 3px 5px 29px 0 rgba(187, 165, 228, 0.1);
+            width: 255px;
+            height: 170px;
+            margin: 15px;
+        }
+
+        .failure-to-thrive {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 14px;
+            line-height: 21px;
+            width: 198px;
+            text-align: left;
+            margin-left: 24px;
+            margin-top: 11px;
+        }
+
+        .img-src {
+
+            margin: 27px 0px 0px 24px;
+        }
+
+        .testimonials {
+            color: #22B78E;
+            font-family: StagSans;
+            font-size: 31px;
+            letter-spacing: 1.28px;
+            line-height: 44px;
+            text-align: left;
+        }
+
+        .rectangle21 {
+            background-color: #FFFFFF;
+            border-radius: 4px;
+            box-shadow: 9px 8px 27px 0 rgba(0, 0, 0, 0.04);
+            width: 517px;
+            height: 249px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 41px;
+        }
+
+        .john-doe {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        .softwere-engineer {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: left;
+            margin-left: 10px;
+            margin-top: -15px;
+        }
+
+        .it-is-a-long-establi {
+            color: #000000;
+            font-family: StagSans;
+            font-size: 15px;
+            font-style: italic;
+            line-height: 21px;
+            width: 410px;
+            text-align: left;
+        }
+
+        .imgsss {
+            display: flex;
+            justify-content: start;
+        }
+
+        .testi1 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .rectangle22 {
+            background-color: #004498;
+            border-radius: 3.81px;
+            width: 221px;
+            height: 54px;
+            margin-left: 450px;
+            margin-top: 63px;
+            margin-bottom: 48px;
+        }
+
+        .book-an-appoinment {
+            color: #FFFFFF;
+            font-family: Arial;
+            font-size: 17.14px;
+            line-height: 21px;
+            text-align: left;
+        }
+
+        .rectangle31 {
+            background-color: #272727;
+            width: 1300px;
+            height: 256px;
+            margin-left: 25px;
+
+        }
+
+        .social {
+            text-align: center;
+            padding-top: 58px;
+        }
+
+        .line-4 {
+            border: 1px solid rgba(255, 255, 255, 0.21);
+            opacity: 0.3701869419642857;
+            width: 1060px;
+            height: 2px;
+            margin-top: 28px;
+        }
+
+        .aster-cmi-all-right {
+            color: #FFFFFF;
+            font-family: StagSans;
+            font-size: 14px;
+            letter-spacing: 1.12px;
+            line-height: 17px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mask container-fluid">
+        <div class="containt">
+            <img class="aster-logo-white" src="img/Aster_logo_white.png" alt="asterlogo">
+            <p class="adult-paediatric-b">ADULT & PAEDIATRIC BONE MARROW TRANPLANT PROGRAMME</p>
+            <p class="haematology-oncolo">Haematology | Oncology | Immunology</p>
+            <div class="rectangle">
+                <p class="book-an-appoinment">Book An Appoinment</p>
+            </div>
+        </div>
+        <div class="rectangle1">
+            <p class="enquire-now">Enquire now</p>
+            <input class="rectangle2" type="text" placeholder="Name">
+            <input class="rectangle2" type="email" placeholder="Email ID">
+            <input class="rectangle2" type="text" placeholder="Phone number">
+            <input class="rectangle-copy-3" type="text" placeholder="Your message">
+            <div class="rectangle-copy-2">
+                <div class="rectangle-5"></div>
+            </div>
+            <div class="rectangle-copy-4">
+                <p class="submit">Submit</p>
+            </div>
+        </div>
+    </div>
+    <div class="shutterstock container">
+        <img class="shutterstock-237963190" src="img/Group 3.png" alt="group3">
+        <div>
+            <div class="rectangle11">
+                <p class="bone-marrow-transpla">Bone Marrow Transplant (BMT) better known as haematopoietic stem cell
+                    transplant(HSCT) as bone marrow cells are transplanted
+                </p>
+            </div>
+            <p class="replacement-of-disea">Replacement of diseased or defective marrow with marrow from a healthy donor
+            </p>
+            <p class="medicines-and-in-cer">
+                Medicines and in certain situations radiotherapy as well is given to get rid of diseased marrow and bone
+                marrow cells from healthy donor is given to replace it.
+            </p>
+            <p class="in-autologous-bone-m">IN autologous bone marrow transplant, high dose chemotherapy is given to
+                kill cancer cells and child own marrow cells are given back</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p class="doctors">Doctors</p>
+        <div class="doctor">
+            <div class="rectangle12">
+                <p class="pediatric-bmt">Pediatric BMT</p>
+                <img class="bitmap-copy" src="img/Bitmap Copy.png" alt="">
+                <p class="dr-vijay-agarwal-copy">Dr. Vijay Agarwal</p>
+                <p class="md-mrcp-ph-d-cct-le-copy">MD, MRCP, PhD,CCT<br>
+                    Lead & Sr. Consultant - Medical Oncology & Haematology</p>
+                <hr class="line-5-copy">
+                <p class="dr-vijay-agarwal-is-copy">Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with
+                    over 12
+                    years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004. </p>
+                <div class="rectangle9">
+                    <p class="know-more">Know More</p>
+                </div>
+
+                <hr class="line-3-copy-13">
+
+                <p class="pediatric-bmt">Pediatric BMT</p>
+                <img class="bitmap-copy" src="img/Bitmap Copy.png" alt="">
+                <p class="dr-vijay-agarwal-copy">Dr. Vijay Agarwal</p>
+                <p class="md-mrcp-ph-d-cct-le-copy">MD, MRCP, PhD,CCT <br>
+                    Lead & Sr. Consultant - Medical Oncology & Haematology</p>
+                <hr class="line-5-copy">
+                <p class="dr-vijay-agarwal-is-copy">Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with
+                    over 12
+                    years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004. </p>
+                <div class="rectangle9">
+                    <p class="know-more">Know More</p>
+                </div>
+            </div>
+            <div class="rectangle12">
+                <p class="pediatric-bmt">Pediatric BMT</p>
+                <img class="bitmap-copy" src="img/Bitmap Copy.png" alt="">
+                <p class="dr-vijay-agarwal-copy">Dr. Vijay Agarwal</p>
+                <p class="md-mrcp-ph-d-cct-le-copy">MD, MRCP, PhD,CCT<br>
+                    Lead & Sr. Consultant - Medical Oncology & Haematology</p>
+                <hr class="line-5-copy">
+                <p class="dr-vijay-agarwal-is-copy">Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with
+                    over 12
+                    years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004. </p>
+                <div class="rectangle9">
+                    <p class="know-more">Know More</p>
+                </div>
+
+                <hr class="line-3-copy-13">
+
+                <p class="pediatric-bmt">Pediatric BMT</p>
+                <img class="bitmap-copy" src="img/Bitmap Copy.png" alt="">
+                <p class="dr-vijay-agarwal-copy">Dr. Vijay Agarwal</p>
+                <p class="md-mrcp-ph-d-cct-le-copy">MD, MRCP, PhD,CCT<br>
+                    Lead & Sr. Consultant - Medical Oncology & Haematology</p>
+                <hr class="line-5-copy">
+                <p class="dr-vijay-agarwal-is-copy">Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with
+                    over 12
+                    years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004. </p>
+                <div class="rectangle9">
+                    <p class="know-more">Know More</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="what-are-the-types-o">What are the types of Bone Marrow Transplant?</p>
+        <div class="autologouss">
+            <div>
+                <img class="src1" src="img/hospital (2) copy 3.png" alt=""><br>
+                <img class="src2" src="img/hospital (2) copy 3.png" alt=""><br>
+                <img class="src3" src="img/hospital (2) copy 3.png" alt=""><br>
+                <img class="src4" src="img/hospital (2) copy 3.png" alt=""><br>
+                <img class="src5" src="img/hospital (2) copy 3.png" alt=""><br>
+
+            </div>
+            <div>
+                <p class="autologous-bone-marr">Autologous Bone Marrow Transplant - Marrow cells are collected from the
+                    patient’s own body and transfused back after high dose chemotherapy.
+                    Allogenic Bone Marrow Transplant (Matched Sibling Donor) – Replacement of diseased or defective
+                    marrow with marrow from a genetically (HLA) matched sibling donor.
+                    Allogenic Bone Marrow Transplant (Matched Unrelated Donor) – Replacement of diseased or defective
+                    marrow with marrow from a genetically (HLA) matched donor obtained from bone marrow registries in
+                    India and abroad.
+                    Haplo-Identical Bone Marrow Transplant - Replacement of diseased or defective marrow with marrow
+                    from the parent.
+                    Umbilical cord Bone Marrow Transplant - Replacement of diseased or defective marrow with marrow from
+                    a genetically (HLA) matched umbilical cord donor obtained from umbilical cord registries in India
+                    and abroad.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <p class="the-warning-signs-of">The warning signs of Immune deficiency</p>
+        </div>
+        <div class="row">
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group 2.png" alt="group2">
+                <p class="failure-to-thrive">Failure to thrive – not gaining weight and height as per the age norms
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group.png" alt="group2">
+                <p class="failure-to-thrive">Infections warranting multiple hospitalizations
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group (1).png" alt="group2">
+                <p class="failure-to-thrive">Requirement of intravenous antibiotics to clear infections
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group (2).png" alt="group2">
+                <p class="failure-to-thrive">2 or more episodes of pneumonia
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group (4).png" alt="group2">
+                <p class="failure-to-thrive">Repeated episodes of diarrhea
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group 2 (1).png" alt="group2">
+                <p class="failure-to-thrive">2 or more episodes of sinus infections within a year
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group 2 (2).png" alt="group2">
+                <p class="failure-to-thrive">2 or more episodes of ear discharge
+
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group 2 (3).png" alt="group2">
+                <p class="failure-to-thrive">Repeated skin infections
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group (5).png" alt="group2">
+                <p class="failure-to-thrive">Repeated abscess formation (liver abscess, brain abscess)
+                </p>
+            </div>
+            <div class="rectangle13 col-md-3">
+                <img class="img-src" src="img/Group (6).png" alt="group2">
+                <p class="failure-to-thrive">Family history of death of children at young age due to immune deficiency
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+        <p class="testimonials">Testimonials</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+            at its layout. </p>
+        <div class="testi1">
+
+            <div class="rectangle21">
+                <div>
+                    <div class="imgsss">
+                        <img src="img/Bitmap.png" alt="bitmap">
+                        <div>
+                            <p class="john-doe">John Doe</p>
+                            <p class="softwere-engineer">Softwere Engineer</p>
+                        </div>
+                    </div>
+
+                    <p class="it-is-a-long-establi">It is a long established fact that a reader will be distracted by
+                        the
+                        readable content of a page when looking at its layout. </p>
+                </div>
+                <div>
+                    <img src="img/”.png" alt="png">
+                </div>
+            </div>
+
+
+            <div class="rectangle21">
+                <div>
+                    <div class="imgsss">
+                        <img src="img/Bitmap.png" alt="bitmap">
+                        <div>
+                            <p class="john-doe">John Doe</p>
+                            <p class="softwere-engineer">Softwere Engineer</p>
+                        </div>
+                    </div>
+
+                    <p class="it-is-a-long-establi">It is a long established fact that a reader will be distracted by
+                        the
+                        readable content of a page when looking at its layout. </p>
+                </div>
+                <div>
+                    <img src="img/”.png" alt="png">
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangle22">
+            <p class="book-an-appoinment">Book An Appoinment</p>
+        </div>
+    </div>
+
+
+    <footer class="rectangle31">
+        <div class="social container">
+            <img src="img/Group 10.png" alt="group10">
+            <img src="img/Group 26.png" alt="group26">
+            <img src="img/003-youtube 2.png" alt="youtube">
+            <img src="img/005-twitter 2.png" alt="twitter">
+            <img src="img/006-linkedin 2.png" alt="linkedin">
+
+            <hr class="line-4">
+            <p class="aster-cmi-all-right">Aster CMI. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
